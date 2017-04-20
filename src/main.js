@@ -30,6 +30,9 @@ function sendKarmaMessage(robot, res, karmaAmount) {
 }
 
 module.exports = function (robot) {
+    robot.respond(/test/i, function (res) {
+        res.send('test');
+    });
     robot.hear(/\s*"(.*)"[+]{2}[+]*|\s*(@\w+)\s?[+]{2}[+]*/i, function (res) {
         var plusCount = (res.message.text.match(/[+]/g) || []).length;
         var positiveKarmaAmount = plusCount > 2 ? plusCount : 1;

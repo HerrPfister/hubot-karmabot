@@ -1,0 +1,16 @@
+#############
+## Folders ##
+#############
+
+node_modules/
+.idea/
+coverage/
+.vscode/
+
+###########
+## Files ##
+###########
+
+npm-debug.log
+.DS_STORE
+.hubot_history

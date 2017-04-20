@@ -1,5 +1,6 @@
 {
   "name": "hubot-karmabot",
+  "main": "index.js",
   "version": "1.0.1",
   "private": false,
   "author": "Matthew Pfister <herrpfister@gmail.com>",
@@ -22,5 +23,9 @@
   },
   "engines": {
     "node": "0.10.x"
-  }
+  },
+  "keywords": [
+    "hubot",
+    "hubot-scripts"
+  ]
 }

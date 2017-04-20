@@ -1,7 +1,7 @@
 {
   "name": "hubot-karmabot",
   "main": "index.js",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "private": false,
   "author": "Matthew Pfister <herrpfister@gmail.com>",
   "description": "Simple bot to keep track of karma.",

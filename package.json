@@ -23,5 +23,8 @@
   "keywords": [
     "hubot",
     "hubot-scripts"
-  ]
+  ],
+  "scripts": {
+    "shell": "hubot --adapter shell --disable-httpd"
+  }
 }

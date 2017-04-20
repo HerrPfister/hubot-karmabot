@@ -2,8 +2,8 @@
 //   A simple hubot that keeps track of karma.
 //
 // Commands:
-//   hubot @[subject]++
-//   hubot "[subject]"++
+//   @[subject]++
+//   "[subject]"++
 //
 // Author:
 //   HerrPfister

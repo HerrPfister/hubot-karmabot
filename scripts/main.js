@@ -30,18 +30,6 @@ function sendKarmaMessage(robot, res, karmaAmount) {
 }
 
 module.exports = function (robot) {
-    robot.hear(/\s*"(\w+)"\s?[+]{2}[+]*/i, function (res) {
-        var plusCount = (res.message.text.match(/[+]/g) || []).length;
-        var positiveKarmaAmount = plusCount > 2 ? plusCount - 1 : 1;
-
-        sendKarmaMessage(robot, res, positiveKarmaAmount);
-    });
-    robot.hear(/\s*"(\w+)"\s?[-]{2}[-]*/i, function (res) {
-        var minusCount = (res.message.text.match(/[-]/g) || []).length;
-        var negativeKarmaAmount = -(minusCount > 2 ? minusCount - 1 : 1);
-
-        sendKarmaMessage(robot, res, negativeKarmaAmount);
-    });
     robot.hear(/\s*(@\w+)\s?[+]{2}[+]*/i, function (res) {
         var plusCount = (res.message.text.match(/[+]/g) || []).length;
         var positiveKarmaAmount = plusCount > 2 ? plusCount - 1 : 1;

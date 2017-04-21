@@ -25,6 +25,6 @@
     "hubot-scripts"
   ],
   "scripts": {
-    "shell": "hubot --adapter shell --disable-httpd"
+    "start": "bin/hubot"
   }
 }

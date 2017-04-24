@@ -2,20 +2,41 @@
 
 `hubot-karmabot` helps keep track of all that karma-tastic debt that people obtain.
 
+### Running Locally
+
+Just run the following command in the root dir of karmabot:
+
+```
+bin/hubot
+```
+
+The `hubot cli` should start up for you to start testing out commands.
+
 ### Usage
+
+##### Increase/Decreasing Karma
 
 Simply add a `+` to add or `-` to deduct karma points from a subject. Like so:
 
 ```
-hubot @SantaClaus++
+@SantaClaus++
 
-output -> @SantaClaus's karma as increased to 2
+output -> @SantaClaus's karma as increased to 1
 ```
 
-or
+```
+@SantaClaus--
+
+output -> @SantaClaus's karma as decreased to 0
+```
+
+##### Viewing Karma Standings
+
+Simply type:
 
 ```
-hubot "Santa Claus"--
+karmabot karma list
 
-output -> Santa Claus's karma as decreased to 0
+output -> @SantasClaus = 0
+          @EasterBunny = 1
 ```
